@@ -348,6 +348,60 @@ style="background-image: url('/images/flat.jpg');">
 </section>
 
 
+<div class="py-20 px-6 bg-gradient-to-br from-white via-yellow-50 to-yellow-100">
+    <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-12 text-black">
+            See Why People Trust <span class="text-yellow-600">FGRS Insurance</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-white shadow-lg rounded-xl p-6">
+                <p class="text-gray-600 italic mb-4">“FGRS gave me peace of mind when my phone broke. The claim was quick and easy.”</p>
+                <div class="flex items-center gap-4">
+                    <img src="/images/photo.jpg" class="w-12 h-12 rounded-full border" alt="Sarah Johnson">
+                    <div class="text-left">
+                        <p class="font-semibold text-black">Sarah Johnson</p>
+                        <p class="text-sm text-gray-500">Lagos, Nigeria</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-white shadow-lg rounded-xl p-6">
+                <p class="text-gray-600 italic mb-4">“Reliable gadget coverage for our company. No stress and great support.”</p>
+                <div class="flex items-center gap-4">
+                    <img src="/images/smartwatch.jpg" class="w-12 h-12 rounded-full border" alt="Michael Adewale">
+                    <div class="text-left">
+                        <p class="font-semibold text-black">Michael Adewale</p>
+                        <p class="text-sm text-gray-500">Abuja, Nigeria</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-white shadow-lg rounded-xl p-6">
+                <p class="text-gray-600 italic mb-4">“Affordable and effective insurance for my new laptop. I highly recommend FGRS.”</p>
+                <div class="flex items-center gap-4">
+                    <img src="/images/tab.jpg" class="w-12 h-12 rounded-full border" alt="Ada Okoro">
+                    <div class="text-left">
+                        <p class="font-semibold text-black">Ada Okoro</p>
+                        <p class="text-sm text-gray-500">Port Harcourt</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- View More Button -->
+        <div class="mt-10">
+            <a href="#" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-2 rounded-full shadow-md transition">
+                View More Testimonials
+            </a>
+        </div>
+    </div>
+</div>
+
+
 
 @endsection
 

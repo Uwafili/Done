@@ -46,7 +46,7 @@
       <a href="#" class="block hover:underline">About</a>
       <a href="#" class="block hover:underline">Services</a>
       <a href="#" class="block hover:underline">Contact</a>
-      <a href="" class="block hover:underline">Login</a>
+      <a href="{{route('login')}}" class="block hover:underline">Login</a>
       <a href="{{route('register')}}" class="block hover:underline">Sign Up</a>
     </nav>
   </aside>
