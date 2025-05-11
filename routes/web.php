@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth')->group(function () {
     Route::view('/personal_insurance', 'personal.personal_insurance')->name('personal_insurance');
     Route::view('/dashboard', 'user.dashboard')->name('dashboard'); 
+    Route::view('/Ourboard', 'About.Ourboard')->name('Ourboard');
 });
 Route::view('/', 'posts.index')->name('index');
 
