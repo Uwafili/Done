@@ -48,8 +48,8 @@
     </button>
     <nav class="space-y-3">
       @auth
-      <a href="#" class="block hover:underline">Home</a>
-      <a href="#" class="block hover:underline">About</a>
+      <a href="{{route('home')}}" class="block hover:underline">Home</a>
+      <a href="{{route('Anout')}}" class="block hover:underline">About</a>
       <a href="#" class="block hover:underline">Services</a>
       <a href="#" class="block hover:underline">Contact</a>
       @endauth
