@@ -21,7 +21,12 @@
     <div class="text-lg font-bold tracking-wide">
       MyWebsite
     </div>
-
+    @guest
+    <h1 style="color: white">Guest</h1>
+    @endguest
+    @auth
+    <h1 style="color: white">Hi {{Auth::user()->name}}</h1>
+  @endauth
     <!-- Toggle Button (Right) -->
     <button id="toggleSidebar" class="bg-yellow-500 p-2 rounded hover:bg-yellow-400">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black" fill="none"
@@ -42,12 +47,16 @@
       </svg>
     </button>
     <nav class="space-y-3">
+      @auth
       <a href="#" class="block hover:underline">Home</a>
       <a href="#" class="block hover:underline">About</a>
       <a href="#" class="block hover:underline">Services</a>
       <a href="#" class="block hover:underline">Contact</a>
+      @endauth
+      
       <a href="{{route('login')}}" class="block hover:underline">Login</a>
       <a href="{{route('register')}}" class="block hover:underline">Sign Up</a>
+      
     </nav>
   </aside>
 

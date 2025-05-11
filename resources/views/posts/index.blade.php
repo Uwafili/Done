@@ -47,9 +47,9 @@
                class="inline-flex items-center gap-2 text-yellow-400 hover:text-yellow-300 transition">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-                <span class="font-medium">Quote</span>
-            </a>
+                    <span class="font-medium"><a href="{{route('personal_insurance')}}"> Quote</a></span>
+                </a>
+            </svg>
         </div>
     </div>
 
