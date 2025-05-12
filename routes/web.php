@@ -5,9 +5,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth')->group(function () {
     Route::view('/personal_insurance', 'personal.personal_insurance')->name('personal_insurance');
-    Route::view('/dashboard', 'user.dashboard')->name('dashboard'); 
+    Route::view('/dashboard', 'user.dashboard')->name('dashboard');
     Route::view('/Ourboard', 'About.Ourboard')->name('Ourboard');
-    Route::view('/Ourboard', 'About.Ourleadership')->name('Ourleadership');
+    Route::view('/Ourleadership', 'About.Ourleadership')->name('Ourleadership');
+    Route::view('/History', 'About.History')->name('History');
     Route::view('/Testimony', 'Testimonies.Testimony')->name('Testimony');
 
 });
