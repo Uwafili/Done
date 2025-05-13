@@ -15,7 +15,7 @@ class AuthController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|max:255|email',
             'phone' => 'required|max:255',
-            'password' =>'required|min:3|confirmed'
+            'password' =>'required|min:8|confirmed|string',
         ]);
 
         $user = User::create([
@@ -26,7 +26,7 @@ class AuthController extends Controller
 
         Auth::login($user);
 
-        return redirect()->route('posts.index');
+        return redirect()->route('home');
     }
 
     public function login(Request $request)
@@ -52,6 +52,6 @@ class AuthController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect()->route('posts.index');
+        return redirect()->route('home');
     }
 }

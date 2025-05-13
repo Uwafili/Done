@@ -10,6 +10,7 @@ Route::middleware('auth')->group(function () {
     Route::view('/Ourleadership', 'About.Ourleadership')->name('Ourleadership');
     Route::view('/History', 'About.History')->name('History');
     Route::view('/Testimony', 'Testimonies.Testimony')->name('Testimony');
+    Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 });
 Route::view('/', 'posts.index')->name('home');

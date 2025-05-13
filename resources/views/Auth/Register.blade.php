@@ -66,6 +66,9 @@
       <i class="fas fa-eye" id="passwordIcon"></i>
     </span>
   </div>
+  @error('password')
+      <p class="text-red-400 text-sm mt-1">{{ $message }}</p>
+    @enderror
 </div>
 
 <!-- Confirm Password -->

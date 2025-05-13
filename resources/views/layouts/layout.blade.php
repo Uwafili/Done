@@ -49,9 +49,22 @@
     <nav class="space-y-3">
       @auth
       <a href="{{route('home')}}" class="block hover:underline">Home</a>
-      {{-- <a href="{{route('About')}}" class="block hover:underline">About</a> --}}
+      <div class="relative group">
+        <button class="block hover:underline w-full text-left">About</button>
+        <div class="hidden group-hover:block absolute left-0 mt-1 bg-[#2a2a2a] text-yellow-400 shadow-lg rounded z-50 w-48">
+          <a href="{{route('Ourleadership')}}" class="block px-4 py-2 hover:bg-yellow-500 hover:text-black">Our Leadership</a>
+          <a href="{{route('Ourboard')}}" class="block px-4 py-2 hover:bg-yellow-500 hover:text-black">Our Board</a>
+          <a href="{{route('History')}}" class="block px-4 py-2 hover:bg-yellow-500 hover:text-black">History</a>
+        </div>
+      </div>
       <a href="#" class="block hover:underline">Services</a>
       <a href="#" class="block hover:underline">Contact</a>
+      {{-- <a href="{{route('logout')}}" class="block hover:underline">logout</a> --}}
+
+      <form action="{{route('logout')}}" method="POST">
+        @csrf
+        <button type="submit" class="block hover:underline">Logout</button>
+      </form>
       @endauth
       
       <a href="{{route('login')}}" class="block hover:underline">Login</a>
