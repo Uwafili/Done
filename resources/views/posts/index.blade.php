@@ -394,7 +394,7 @@ style="background-image: url('/images/flat.jpg');">
 
         <!-- View More Button -->
         <div class="mt-10">
-            <a href="#" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-2 rounded-full shadow-md transition">
+            <a href="{{route('Testimony')}}" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-2 rounded-full shadow-md transition">
                 View More Testimonials
             </a>
         </div>
