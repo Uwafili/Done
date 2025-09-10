@@ -7,7 +7,8 @@
   <title>Responsive Nav</title>
   
 </head>
-
+<br>
+<br> 
 <body class="bg-[#FAF9F6] min-h-screen pb-16 md:pb-0 text-yellow-400">
 
   <!-- 📱 Mobile Header (Top) -->
@@ -57,6 +58,14 @@
           <a href="{{route('History')}}" class="block px-4 py-2 hover:bg-yellow-500 hover:text-black">History</a>
         </div>
       </div>
+      <div class="relative group">
+        <button class="block hover:underline w-full text-left">Products</button>
+        <div class="hidden group-hover:block absolute left-0 mt-1 bg-[#2a2a2a] text-yellow-400 shadow-lg rounded z-50 w-48">
+          <a href="#" class="block px-4 py-2 hover:bg-yellow-500 hover:text-black">Professional</a>
+          <a href="#" class="block px-4 py-2 hover:bg-yellow-500 hover:text-black">Customer-Friendly</a>
+          <a href="{{route('Modern')}}" class="block px-4 py-2 hover:bg-yellow-500 hover:text-black">Modern</a>
+        </div>
+      </div>
       <a href="#" class="block hover:underline">Services</a>
       <a href="#" class="block hover:underline">Contact</a>
       {{-- <a href="{{route('logout')}}" class="block hover:underline">logout</a> --}}
@@ -66,10 +75,13 @@
         <button type="submit" class="block hover:underline">Logout</button>
       </form>
       @endauth
+      @guest()
+        
       
       <a href="{{route('login')}}" class="block hover:underline">Login</a>
       <a href="{{route('register')}}" class="block hover:underline">Sign Up</a>
       
+      @endguest
     </nav>
   </aside>
 
@@ -89,20 +101,23 @@
       </svg>
       <span class="text-xs block">About</span>
     </a>
+    @guest()
+      
+    <a href="#" class="hover:text-yellow-300">
+      <svg class="h-6 w-6 mx-auto" fill="none" stroke="currentColor" stroke-width="2"
+      viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+    </svg>
+    <span class="text-xs block">Login</span>
+  </a>
     <a href="#" class="hover:text-yellow-300">
       <svg class="h-6 w-6 mx-auto" fill="none" stroke="currentColor" stroke-width="2"
            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-      </svg>
-      <span class="text-xs block">Login</span>
-    </a>
-    <a href="#" class="hover:text-yellow-300">
-      <svg class="h-6 w-6 mx-auto" fill="none" stroke="currentColor" stroke-width="2"
-           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
-      </svg>
-      <span class="text-xs block" >Sign Up</span>
-    </a>
+           <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+          </svg>
+          <span class="text-xs block" >Sign Up</span>
+        </a>
+        @endguest
   </nav>
 
   <script>

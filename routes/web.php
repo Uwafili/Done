@@ -19,6 +19,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/claims', [ClaimController::class, 'index'])->name('claims.index');
     Route::view('/claims', 'info.claims')->name('claims');
 
+
+    Route::view('/Modern', 'product.Modern')->name('Modern');
+
 });
 Route::view('/', 'posts.index')->name('home');
 

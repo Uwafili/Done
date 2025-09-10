@@ -19,15 +19,14 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->string('status')->default('Pending');
             $table->timestamps();
-
         });
-        
-        /**
-         * Reverse the migrations.
-         */
-        public function down(): void
-        {
-            Schema::dropIfExists('claims');
-        }
-        
     }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('claims');
+    }
+};
